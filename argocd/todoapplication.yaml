@@ -95,9 +95,9 @@ spec:
           image: kerthik087/todoapplication:frontend
           ports:
             - containerPort: 3000
-          env:
-            - name: BACKEND_HOST
-              value: "backend-service"
+          # env:
+          #   - name: BACKEND_HOST
+          #     value: "backend-service"
 
 ---
 apiVersion: v1
