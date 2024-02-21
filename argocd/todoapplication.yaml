@@ -97,7 +97,7 @@ spec:
             - containerPort: 3000
           env:
             - name: BACKEND_HOST
-              value: "a423dec6c3f344a2fafbf18eb0dad0a4-274257718.ap-south-1.elb.amazonaws.com"
+              value: "backend-service"
 
 ---
 apiVersion: v1
