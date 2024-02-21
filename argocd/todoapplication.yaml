@@ -53,7 +53,7 @@ spec:
          - name: backend
            image: kerthik087/todoapplication:backend
            ports:
-             - containerPort: 8080
+             - containerPort: 8000
            env:
              - name: MONGO_URI
                value: "mongodb://mongodb-service:27017/to-do-list"
@@ -70,8 +70,8 @@ spec:
      app: backend
    ports:
      - protocol: TCP
-       port: 8080
-       targetPort: 8080
+       port: 8000
+       targetPort: 8000
    type: LoadBalancer
 
 
