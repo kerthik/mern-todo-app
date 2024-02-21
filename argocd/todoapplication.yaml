@@ -28,7 +28,7 @@ spec:
     app: mongodb
   ports:
     - protocol: TCP
-      port: 443
+      port: 27017
       targetPort: 27017
   type: LoadBalancer
 
@@ -70,7 +70,7 @@ spec:
      app: backend
    ports:
      - protocol: TCP
-       port: 443
+       port: 8080
        targetPort: 8080
    type: LoadBalancer
 
@@ -109,7 +109,7 @@ spec:
     app: frontend
   ports:
     - protocol: TCP
-      port: 443
+      port: 80
       targetPort: 3000
   type: LoadBalancer
 
